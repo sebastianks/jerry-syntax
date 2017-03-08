@@ -39,7 +39,7 @@ atom-text-editor .search-results .syntax--marker .region {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
@@ -65,7 +65,7 @@ atom-text-editor.editor .bracket-matcher .region {
   background-color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor::shadow .bracket-matcher .region {
+atom-text-editor.editor .bracket-matcher .region {
   z-index: 100;
   border-radius: 2px;
   background-color: fade(@syntax-bracket-matcher, 30%);
@@ -128,11 +128,11 @@ atom-text-editor::shadow .bracket-matcher .region {
   color: @syntax-type-inheritance;
 }
 
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--function {
   color: @syntax-type-definition;
 }
 
-.variable.parameter {
+.syntax--variable.syntax--parameter {
   font-style: italic;
   color: @syntax-type-parameter;
 }
@@ -160,17 +160,17 @@ atom-text-editor::shadow .bracket-matcher .region {
   color: @syntax-type-tag;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: @syntax-type-attribute;
 }
 
-.support.function,
-.support.constant {
+.syntax--support.syntax--function,
+.syntax--support.syntax--constant {
   color: @syntax-type-function;
 }
 
-.support.type,
-.support.class {
+.syntax--support.syntax--type,
+.syntax--support.syntax--class {
   color: @syntax-type-function;
 }
 
